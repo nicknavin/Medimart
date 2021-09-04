@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navdrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_header"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_nodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ttcommons"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="No Data"
+                    android:visibility="gone"
+                    />
+
+<!--                <com.app.amanrow.customview.CustomTextView-->
+<!--                    android:id="@+id/drawer_btn_myRoll"-->
+<!--                    style="@style/ButtonRippleStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingRight="40dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    android:paddingLeft="40dp"-->
+<!--                    android:paddingTop="15dp"-->
+<!--                    android:paddingBottom="15dp"-->
+<!--                    android:text="@string/menu_roll"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:edittextfont="OpenSans-Regular.ttf"-->
+<!--                    app:edittextfontHint="OpenSans-Bold.ttf" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
