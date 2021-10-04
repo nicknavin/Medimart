@@ -24,7 +24,7 @@
                 layout="@layout/toolbar_main" />
 
 
-<!--            <include layout="@layout/activity_hame_bottem"></include>-->
+            <include layout="@layout/home_container"></include>
 
 
         </LinearLayout>
@@ -32,5 +32,7 @@
 
     </RelativeLayout>
     <!-- Nav drawer -->
-    <include layout="@layout/navdrawer" />
+    <include
+        android:id="@+id/menu_drawer"
+        layout="@layout/navdrawer" />
 </androidx.drawerlayout.widget.DrawerLayout>

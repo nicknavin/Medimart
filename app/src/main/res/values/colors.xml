@@ -7,12 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#517DA2</color>
+    <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimary_light">#F2517DA2</color>
     <color name="colorPrimary_lights">#40517DA2</color>
-    <color name="colorPrimaryDark">#426382</color>
+    <color name="colorPrimaryDark">#1976D2</color>
     <color name="tab_indi">#37C6D6</color>
-    <color name="colorAccent">#A9A9A9</color>
+    <color name="colorAccent">#2196F3</color>
     <color name="transparent">#00000000</color>
+    <color name="menu_item">#202124</color>
+    <color name="btn_theme">#2196F3</color>
 
 </resources>

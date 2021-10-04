@@ -12,6 +12,32 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/imgmenu"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/text_title"
+                android:src="@drawable/ic_pharmacy_delivery" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
 
         <ScrollView
@@ -24,37 +50,202 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
-
                 android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_home"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_category"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_profile"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/txt_nodata"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/text_order"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/ttcommons"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_order"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
 
-                    android:gravity="center"
-                    android:textColor="@color/white"
-                    android:text="No Data"
-                    android:visibility="gone"
-                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_wishlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_wishlist"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
 
-<!--                <com.app.amanrow.customview.CustomTextView-->
-<!--                    android:id="@+id/drawer_btn_myRoll"-->
-<!--                    style="@style/ButtonRippleStyle"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:paddingRight="40dp"-->
-<!--                    android:drawablePadding="15dp"-->
-<!--                    android:paddingLeft="40dp"-->
-<!--                    android:paddingTop="15dp"-->
-<!--                    android:paddingBottom="15dp"-->
-<!--                    android:text="@string/menu_roll"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="16sp"-->
-<!--                    app:edittextfont="OpenSans-Regular.ttf"-->
-<!--                    app:edittextfontHint="OpenSans-Bold.ttf" />-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_cart"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_notification"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent" />
+                   <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                       android:background="?attr/selectableItemBackground"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_offer_zone"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorAccent"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_about"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_privacy_policy"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_terms_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_terms_condition"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
+<androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="40dp"
+    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/menu_contact"
+                    android:textColor="@color/menu_item"
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </ScrollView>

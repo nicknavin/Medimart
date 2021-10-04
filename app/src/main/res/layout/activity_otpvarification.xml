@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.view.OTPVarificationActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="10dp"
+        android:text="@string/msg_otp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/msg_otp_sent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/text_header"
+        android:textSize="16sp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/square_border_box"
+        android:fontFamily="@font/opensans_regular"
+        android:hint="@string/hint_otp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="20dp"
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_msg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:text="@string/msg_resend"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/edtMobile"
+        android:textSize="16sp"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_curve_btn"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/continue_txt"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/text_resend"
+        android:textSize="16sp"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

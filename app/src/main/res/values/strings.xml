@@ -11,4 +11,38 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_medical">My Medical Store</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_wishlist">Wishlist</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_notification">Notifications</string>
+    <string name="menu_offer_zone">Offer Zone</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_terms_condition">Terms and Conditions</string>
+    <string name="menu_category">Shop By Category</string>
+    <string name="search">Search</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_password">Password</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="continue_txt">Continue</string>
+    <string name="msg_Login">Log in to your account</string>
+    <string name="msg_otp">Enter your confrimation code</string>
+    <string name="hint_otp">OTP</string>
+    <string name="msg_otp_sent">We send a 4 digit code to +914565456541</string>
+    <string name="msg_resend">Resend</string>
 </resources>
